@@ -460,34 +460,36 @@ section{
     border-radius: 5px 0px 0px 5px;
 }
 .footer-page{
+    position: relative;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
-    margin-top: 1%;
-    line-height: 26px;
-    background-color: #202942;
-    padding: 5% 10%;
+    /* background-color: #202942; */
+    background-color: red;
+    padding: 3% 10%;
 }
 .footer-page > div{
-    display:flex;
+    position: relative;
+    display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
     width: 100%;
-    height: 100%;
-    margin-top: 1%;
-    line-height: 26px;
-    background-color: #202942;
-}
-.efeito, .efeito4{
-    margin: 0%;
-    width:40%;
+    /* background-color: #202942; */
+    background-color: blue;
     padding: 2%;
-    max-width: 600px;
+}
+.efeito{
+    top:0;
+    width:40%;
     color: #8492a6 !important;
+    background-color: white;
+    padding: 2%;
+}
+
+.efeito{
+    margin-top: 0;
 }
 .efeito > .logo{
     width: 100%;
@@ -495,32 +497,25 @@ section{
     margin: 5% 0 ;
     padding-left: 0;
 }
-.efeito{
-    margin-top: 0;
-}
-.efeito2,.efeito3{
-    margin-top:0;
-    margin-left: 3%;
-    width:30%;
-    height: 40vh;
-}
-.efeito2 > h4, .efeito3 > h4{
+
+.efeito > h4, .efeito > h4{
     color: #f8dfaa;
     font-size: 20px;
     margin-top: 5%;
 }
-.efeito4 > h4{
+.efeito > h4{
     color: #f8dfaa;
     font-size: 22px;
 }
-.efeito4 > .formulario > form > label{
+.efeito > .formulario > form > label{
     width: 100%;
+    background-color: red;
 }
-.efeito2 > ul > li > a{
+.efeito > ul > li > a{
     text-decoration: none;
     color: #8492a6 !important;
 }
-.efeito3 > ul > li > a{
+.efeito > ul > li > a{
     text-decoration: none;
     color: #8492a6 !important;
 }

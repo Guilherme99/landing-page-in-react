@@ -235,7 +235,7 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="efeito2">
+                <div className="efeito">
                     <h4>Company</h4>
                     <ul>
                         <li><FaChevronRight/><a href="#">About us</a></li>
@@ -243,14 +243,14 @@ function Home() {
                         <li><FaChevronRight/><a href="#">Team</a></li>
                     </ul>
                 </div>
-                <div className="efeito3">
+                <div className="efeito">
                     <h4>Usefull Links</h4>
                     <ul>
                         <li><FaChevronRight/><a href="#">Terms of Services</a></li>
                         <li><FaChevronRight/><a href="#"> Privacy Policy</a></li>
                     </ul>
                 </div>
-                <div className="efeito4">
+                <div className="efeito">
                         <h4>Newsletter</h4>
                         <p>Sign up and receive the latest tips via email.</p>
                         <div className="formulario">
