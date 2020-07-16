@@ -633,7 +633,7 @@ ul > li {
 }
 @media (min-width: 778px){
 .footer-page{
-    padding: 2% 0%;
+    padding: 2% 3%;
 }
 .footer-page > div{
     flex-direction: row;
