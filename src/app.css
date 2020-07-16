@@ -467,8 +467,7 @@ section{
     justify-content: center;
     width: 100%;
     height: 100%;
-    /* background-color: #202942; */
-    background-color: red;
+    background-color: #202942;
     padding: 3% 10%;
 }
 .footer-page > div{
@@ -476,15 +475,13 @@ section{
     display: flex;
     flex-direction: row;
     width: 100%;
-    /* background-color: #202942; */
-    background-color: blue;
+    background-color: #202942;
     padding: 2%;
 }
 .efeito{
     top:0;
     width:40%;
     color: #8492a6 !important;
-    background-color: white;
     padding: 2%;
 }
 
@@ -493,7 +490,6 @@ section{
 }
 .efeito > .logo{
     width: 100%;
-    margin-top: -5%;
     margin: 5% 0 ;
     padding-left: 0;
 }
@@ -507,9 +503,18 @@ section{
     color: #f8dfaa;
     font-size: 22px;
 }
+.efeito > .formulario > form{
+    width: 100%;
+}
 .efeito > .formulario > form > label{
     width: 100%;
-    background-color: red;
+}
+.efeito > .formulario > form > label > .input_campo{
+    width: 100%;
+}
+.efeito > .formulario > form > label > .input_campo > input{
+    width:80%;
+    padding: 2% 3%;
 }
 .efeito > ul > li > a{
     text-decoration: none;
@@ -591,23 +596,27 @@ ul > li {
     .footer-page > div{
         flex-direction: row;
     }
-    .efeito4 > .formulario > form{
+    .efeito{
         width: 100%;
-        
     }
-
-    .efeito2,.efeito3{
-        margin-top:-5%;
-        margin-left: 3%;
-        width:30%;
-        height: 40vh;
+    .efeito > .logo{
+        width: 100%;
     }
-    .efeito4 > .formulario {
-        display: flex;
-        flex-direction: column;
+    .efeito > .formulario{
+        width: 100%;
     }
-    .efeito4 > .formulario > form{
-        width: 120%;
+    .efeito > .formulario > form{
+        width: 100%;
+    }
+    .efeito > .formulario > form > label{
+        width: 100%;
+    }
+    .efeito > .formulario > form > label > .input_campo{
+        width: 100%;
+    }
+    .efeito > .formulario > form > label > .input_campo > input{
+        width:80%;
+        padding: 1% 2%;
     }
     .btn_contato3{
         width: 100%;
@@ -619,7 +628,21 @@ ul > li {
         border-radius: 5px;
         border: none;
         margin: auto;
+        padding: 2%;
     }
+}
+@media (min-width: 778px){
+.footer-page{
+    padding: 2% 0%;
+}
+.footer-page > div{
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+.efeito{
+    width: 40%;
+}
 }
 @media (max-width: 778px){
     .template_cards{
@@ -744,12 +767,6 @@ ul > li {
         width: 50%;
         font-size: 12px;
     }
-    .footer-page >  div{
-        float: left;
-        flex-direction: column;
-        left:0;
-        padding: 0;
-    }
     .footer-page{
         display:flex;
         flex-direction: column;
@@ -759,21 +776,34 @@ ul > li {
         height: 100%;
         line-height: 26px;
         background-color: #202942;
+        padding: 2% 5%;
     }
     .footer-page > div{
-        flex-direction: column;
+        flex-direction: row;
         width: 100%;
         height: 100%;
     }
-    .efeito, .efeito2,.efeito3, .efeito4{
-        width:100%;
-        height: 100%;
-    }
-    .efeito > .logo{
+    .efeito{
         width: 35%;
     }
-    .efeito4 > .formulario > form{
-        width: 55%;
+    .efeito > .logo{
+        width: 100%;
+    }
+    .efeito > .formulario{
+        width: 140%;
+    }
+    .efeito > .formulario > form{
+        width: 100%;
+    }
+    .efeito > .formulario > form > label{
+        width: 100%;
+    }
+    .efeito > .formulario > form > label > .input_campo{
+        width: 100%;
+    }
+    .efeito > .formulario > form > label > .input_campo > input{
+        width:80%;
+        padding: 1% 2%;
     }
     .btn_contato3{
         width: 100%;
@@ -782,11 +812,11 @@ ul > li {
         align-items: center;
         justify-content: center;
         font-size: 14px;
-        border-radius: 0 5px 5px 0px;
+        border-radius: 5px;
         border: none;
     }
 }
-@media (max-width: 560px){
+@media (max-width: 660px){
     .new-card{
         width: 100%;
         height: 100vh;
@@ -809,18 +839,30 @@ ul > li {
     .footer-page > div{
         flex-direction: column;
     }
-    .efeito4 > .formulario {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .efeito{
+        width: 100%;
     }
-    .efeito4 > .formulario > form{
-        width: 90%;
-        text-align: center;
+    .efeito > .logo{
+        width: 35%;
+    }
+    .efeito > .formulario{
+        width: 100%;
+    }
+    .efeito > .formulario > form{
+        width: 100%;
+    }
+    .efeito > .formulario > form > label{
+        width: 100%;
+    }
+    .efeito > .formulario > form > label > .input_campo{
+        width: 100%;
+    }
+    .efeito > .formulario > form > label > .input_campo > input{
+        width:100%;
+        padding: 1% 2%;
     }
     .btn_contato3{
-        width: 90%;
+        width: 100%;
         height: 100%;
         display: flex;
         align-items: center;
@@ -885,19 +927,27 @@ ul > li {
     .footer-page > div{
         flex-direction: column;
     }
-    .efeito4 > .formulario > form{
+    .efeito{
         width: 100%;
-        
     }
-    .efeito4 > .formulario {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .efeito > .logo{
+        width: 35%;
     }
-    .efeito4 > .formulario > form{
-        width: 90%;
-        text-align: center;
+    .efeito > .formulario{
+        width: 100%;
+    }
+    .efeito > .formulario > form{
+        width: 100%;
+    }
+    .efeito > .formulario > form > label{
+        width: 100%;
+    }
+    .efeito > .formulario > form > label > .input_campo{
+        width: 100%;
+    }
+    .efeito > .formulario > form > label > .input_campo > input{
+        width:100%;
+        padding: 1% 2%;
     }
     .btn_contato3{
         width: 100%;
